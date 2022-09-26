@@ -17,6 +17,7 @@ public class Author {
 
     @Override
     public String toString() {
+        //Что лучше конкатенация, стрингформат или стринбилдер?
         return name + " " + surname;
     }
 

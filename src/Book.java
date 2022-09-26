@@ -28,6 +28,7 @@ public class Book {
 
     @Override
     public String toString() {
+        //Что лучше конкатенация, стрингформат или стринбилдер?
         return String.format("%s: %s: %d", author.toString(), name, year);
     }
 

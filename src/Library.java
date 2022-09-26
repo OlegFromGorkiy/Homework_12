@@ -21,8 +21,9 @@ public class Library {
     }
 
     public void viewAll() {
-        //iDea советует foreach, но есть подозрения что могут быть ошибки когда
-        //цикл будет обрабатывать null значения. В такой реализации я уверен.
+        //Изначально был цикл fori, но iDea советовалат foreach. Уменя были подозрения
+        //что могут быть ошибки когда цикл будет обрабатывать null значения.
+        //В такой реализации я уверен. А главное коротко.
         Arrays.stream(books).filter(Objects::nonNull).forEach(System.out::println);
     }
 
